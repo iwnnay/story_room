@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Game from './components/game';
 
-ReactDOM.render(
-  <h1>Hello World!</h1>,
-  document.getElementById('root'),
-);
+import css from './scss/global.scss';
+
+ReactDOM.render(<Game />, document.getElementById('root'));
