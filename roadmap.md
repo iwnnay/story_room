@@ -1,5 +1,10 @@
 # Versions
 
+# Developer Todos
+1. Get everything up to where we process our first command
+1. Write tests for the app up to that point
+1. Process a command
+
 # Roadmap
 1. Create a game class that displays a GUI of 3 basic sections
     * input area
