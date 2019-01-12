@@ -3,15 +3,11 @@ export default class GameEngine {
     this.situation = null; // Situation;
   }
 
-  start() {
-    this.situation.describe();
+  getRoomDescription() {
+    return 'Room';
   }
 
-  setPlayer(player) {
-    this.player = player;
-  }
-
-  setRoom(room) {
-    this.room = room;
+  getSituationDescription() {
+    return 'Situation';
   }
 }

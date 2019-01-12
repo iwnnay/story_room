@@ -8,22 +8,21 @@ export default class Game extends Component {
   constructor(props) {
     super(props);
     this.game = new GameService();
-    this.overview = null;
-    this.interaction = null;
+    this.commands = [];
 
     this.handleInput = this.handleInput.bind(this);
   }
 
   handleInput(input) {
-    this.input = input;
-    // process command line information
+    this.commands.push(input);
+    this.game.processCommand(input);
   }
 
   render() {
     return [
       <CommandLine key="CL" input={this.handleInput} />,
-      <Overview key="OV" />, // ref={(overview) => { this.overview = overview; }} />,
-      <Interaction key="IA" />, // ref={(interaction) => { this.interaction = interaction; }} />,
+      <Overview key="OV" info={this.game.getRoomDescription()} />,
+      <Interaction key="IA" info={this.game.getSituationDescription()} />,
     ];
   }
 }

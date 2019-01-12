@@ -1,3 +1,13 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
-export default () => <div id="interaction" />;
+const Interaction = (props) => {
+  const { info } = props;
+  return (<div id="interaction">{info}</div>);
+};
+
+Interaction.propTypes = {
+  info: propTypes.string.isRequired,
+};
+
+export default Interaction;

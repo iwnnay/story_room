@@ -1,4 +1,13 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
-export default () => <div id="overview" />;
+const Overview = (props) => {
+  const { info } = props;
+  return (<div id="overview">{info}</div>);
+};
 
+Overview.propTypes = {
+  info: propTypes.string.isRequired,
+};
+
+export default Overview;
