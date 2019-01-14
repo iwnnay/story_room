@@ -8,7 +8,6 @@ export default class GameEngine {
   }
 
   load(locationName) {
-    console.count('hit');
     this.situation = new Situation(this.api.getLocation(locationName));
   }
 }
