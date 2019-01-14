@@ -3,7 +3,8 @@ import propTypes from 'prop-types';
 
 const Interaction = (props) => {
   const { info } = props;
-  const { overview } = info;
+  const { focus } = info;
+  const { overview } = focus;
   return (<div id="interaction">{overview}</div>);
 };
 

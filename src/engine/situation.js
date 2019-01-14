@@ -1,6 +1,10 @@
+import Location from './location';
+
 export default class {
   constructor(location) {
-    this.location = location;
+    this.location = new Location(location);
+    this.room = this.location.currentRoom;
+    this.focus = this.currentRoom;
   }
 
   set room(room) {
@@ -9,13 +13,16 @@ export default class {
 
   describe() {
     return {
-      overview: this.currentSituation,
-      // enteredRoom: this.room.newInfo,
-      // discovered: this.newInfo,
+      focus: this.current,
+      // enteredRoom: this.room.newItems,
     };
   }
 
-  get currentSituation() {
-    return 'get current situation';
+  get current() {
+    return {
+      isNew: !this.focus.hasSeen,
+      overview: this.focus.describe,
+      items: this.focus.itemDescriptions,
+    };
   }
 }
