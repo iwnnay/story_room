@@ -1,5 +1,5 @@
 import BaseDataProvider from './base';
-import * as locations from '../../data/locations';
+import locations from '../../data/locations';
 
 export default class LocalDataProvider extends BaseDataProvider {
   constructor() {
