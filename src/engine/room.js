@@ -40,7 +40,7 @@ export default class Room {
     return this.loadedData.describe;
   }
 
-  get itemDesciptions() {
+  get itemDescriptions() {
     return this.items.filter(item => item.isVisible).map(item => ({
       isNew: !item.hasSeen,
       overview: item.describe,
@@ -48,7 +48,7 @@ export default class Room {
   }
 
   calculateItemVisibility() {
-    (this.items || []).forEach((item) => {
+    this.items.forEach((item) => {
       if (!item.isVisible) {
         if (didHappen(item.visibility)) {
           item.markVisible();

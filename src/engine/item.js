@@ -17,6 +17,10 @@
  * }
  */
 export default class Item {
+  constructor(data) {
+    this.data = data;
+  }
+
   set data(data) {
     this.loadedData = data;
     this.hasSeen = data.hasSeen || false;
@@ -31,13 +35,12 @@ export default class Item {
   get data() {
     return {
       ...this.loadedData,
-      hasVisited: this.hasVisited,
+      hasSeen: this.hasSeen,
+      isVisible: this.isVisible,
     };
   }
 
   get describe() {
-    this.calculateItemVisibility();
-
     return this.loadedData.describe;
   }
 
@@ -46,6 +49,10 @@ export default class Item {
       isNew: !item.hasSeen,
       overview: item.describe,
     }));
+  }
+
+  get visibility() {
+    return this.loadedData.visibility || 100;
   }
 
   markVisible() {
