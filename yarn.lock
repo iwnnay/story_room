@@ -7457,6 +7457,11 @@ test-exclude@^4.2.1:
     read-pkg-up "^1.0.1"
     require-main-filename "^1.0.1"
 
+text-story-game-engine@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/text-story-game-engine/-/text-story-game-engine-0.0.0.tgz#f431cc3059b63604bb6cc78c2883f88490319b43"
+  integrity sha512-ymX4Ba1e7WoeBPAtTqNm89cKf8EKLYRqsp9N6oY/yA5M4FO23iClr+WN9kxk/M5kJuB6WMurF6sUENCwcHh2hQ==
+
 text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"

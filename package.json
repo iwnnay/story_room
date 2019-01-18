@@ -55,6 +55,7 @@
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "text-story-game-engine": "^0.0.0"
   }
 }

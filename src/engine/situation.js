@@ -11,6 +11,10 @@ export default class {
     this.currentRoom = room;
   }
 
+  get objectsAndActions() {
+    return [];
+  }
+
   describe() {
     return {
       focus: this.current,
