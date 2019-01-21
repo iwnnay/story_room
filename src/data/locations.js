@@ -11,7 +11,8 @@ locations.push({
       describe: 'You\'re in a room... four walls a ceiling and floor made of concrete slabs. It\'s warm and the air is heavy. If you didn\'t know better you\'d say this is your tomb... but do you know better?',
       items: [
         {
-          short: 'box',
+          name: 'tiny wooden box',
+          shorts: ['box'],
           type: 'container',
           describe: `A wooden box that is smooth to the touch,
           crafted and milled with perfection. On one side there is a tiny metal
@@ -33,7 +34,8 @@ locations.push({
           stats: { weight: 1, measurements: [3, 3, 3] },
         },
         {
-          short: 'mouse',
+          name: 'Tiny white mouse',
+          shorts: ['mouse'],
           type: 'animal',
           describe: 'A tiny white mouse that scurries between holes in the east and west walls. It seems content on staying hidden',
           visibility: 10,
