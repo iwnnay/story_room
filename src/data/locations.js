@@ -11,7 +11,7 @@ locations.push({
       describe: 'You\'re in a room... four walls a ceiling and floor made of concrete slabs. It\'s warm and the air is heavy. If you didn\'t know better you\'d say this is your tomb... but do you know better?',
       items: [
         {
-          name: 'tiny wooden box',
+          name: 'Small wooden box',
           shorts: ['box'],
           type: 'container',
           describe: `A wooden box that is smooth to the touch,
