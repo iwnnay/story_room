@@ -10,3 +10,12 @@ input {
   border-bottom: 2px solid gray;
   color: white;
 }
+
+.is-new {
+  color: green;
+
+  &::before {
+    content: '*';
+    color: green;
+  }
+}
